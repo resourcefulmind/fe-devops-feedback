@@ -1,8 +1,8 @@
 import { Redis } from "@upstash/redis";
 
 const redis = new Redis({
-    url: 'https://us1-helpful-bluejay-38304.upstash.io', 
-    token: 'AZWgACQgNzQ3MDg4YjQtNzM3NC00MDQyLWI0YjItOTMzY2JjOTg0MTM0OTgyOGIxZTk0MTdmNDBjY2FhYTdmZmY4NDMwZmZjMTQ=', 
+    url: process.env.UPSTASH_REDIS_REST_URL , 
+    token: process.env.UPSTASH_REDIS_REST_TOKEN, 
 });
 
 const submitHandler = async (req, res) => {
