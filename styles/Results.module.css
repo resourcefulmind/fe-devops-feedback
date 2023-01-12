@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 20px;
+
+    min-height: 100vh;
+    padding: 50px;
+    /* margin: 50px 0; */
+    background: #Fff;
+}
+
+.container > div {
+    /* background: rgba(0, 0, 0, 0.05); */
+    background: #F1CFFC;
+    border-radius: 10px;
+
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    gap: 10px;
+}
+
+.container p {
+    margin: 0;
+}
